@@ -1,0 +1,131 @@
+body{
+    background: #eee;
+    color: #fff;
+}
+
+#project{
+    position: relative;
+    height: 300px;
+}
+#ProjectWrapper .MainContainer{
+    position: relative;
+    margin-top: 60px;
+}
+#ProjectWrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 70px;
+    margin-bottom: 40px;
+}
+.MainContainer{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+.project_head{
+    display: flex;
+    flex-direction: row;
+    background: #80cea1;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.head_text{
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.project_body{
+    width: 400px;
+    margin-top: 12px;
+    color: #686565;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+.project_footer .project_head{
+    background: #9b4b66;
+}
+
+.footer_body{
+    display: flex;
+    flex-direction: column;
+    background: #bf4760;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.frame_text{
+    text-align: center;
+}
+.languages{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-top: 20px;
+    gap: 4px;
+    margin-bottom: 20px;
+}
+.btn_lan{
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background: #ebc824;
+    color: #fff;
+    border: 0px;
+}
+.btn_git{
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background: #20cbe4;
+    color: #fff; 
+    width: 100%; 
+    border: 0px;
+}
+.body_text{
+    text-align: center;
+}
+/** SMALL DEVICE */
+@media screen and (max-width:760px){
+    .left_arrow{
+        width: 60px;
+    }
+    .head_text{
+        font-size: 14px;
+    }
+    .right_arrow{
+        width: 60px;
+    }
+    .MainContainer{
+        width: 100%;
+    }
+    .project_body{
+        width: 100%;
+        margin-left: 0;
+    }
+    #ProjectWrapper{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 40px;
+    }
+}
+@media only screen and (device-width:768px){
+    #ProjectWrapper{
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 20%;
+}
+}

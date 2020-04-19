@@ -1,0 +1,21 @@
+body #skills{
+    background: #3f4256;
+}
+#skills{
+    position: relative;
+    height: fit-content;
+    color: #fff;
+}
+#skills_img{
+    width: 100%;
+    cursor: pointer;
+}
+
+#mainWrap{
+    position: absolute;
+    top: 198px;
+    left: 393px;
+    color: #fff;
+    display: block;
+    width: 500px;
+}

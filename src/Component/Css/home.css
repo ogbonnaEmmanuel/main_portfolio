@@ -1,0 +1,498 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+}
+/* ............................HEADER DESIGN............................................**/
+header{
+    background: url(../img/Head_background.png);
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 0;
+    position: relative;
+}
+
+.wrapper{
+    position: absolute;
+}
+
+#my_name{
+    margin-left: 40px;
+    margin-top: 20px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+#dot_image{
+    float: right;
+    margin-top: -30px;
+    margin-right: 20px;
+}
+#dot_image:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#full_stack{
+    background-color: #6f4560;
+    width: 28%;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-left: 40px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+#full_id{
+    margin-left: 20px;
+}
+#cor_img{
+    margin-left: 10px;
+    margin-top: -3px;
+}
+
+#description{
+    display: grid;
+    gap: 3px;
+    grid-template-columns: repeat(12,1fr);
+}
+#head_des{
+    grid-column: 1/8;
+    margin-left: 40px;
+    color: #fff;
+    margin-top: 35px;
+}
+#head_img{
+    grid-column: 9/13;
+    width: 200px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 20px solid black;
+    animation: image_blink 5s ease-in infinite;
+    -webkit-animation: image_blink 5s ease-in infinite;
+    margin-top: -30px;
+}
+
+nav{
+    margin-left: 29%;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+ul{
+    display: flex;
+}
+ul li{
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+    padding: 20px;
+    color: #fff;
+    border-bottom: 5px solid #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: 30px;
+    transition: border-bottom 2s;
+    -webkit-transition: border-bottom 2s;
+    -moz-transition: border-bottom 2s;
+    -ms-transition: border-bottom 2s;
+    -o-transition: border-bottom 2s;
+}
+ul li:nth-child(1):hover{
+    border-bottom: 5px solid #20cbe4;
+}
+ul li:nth-child(2):hover{
+    border-bottom: 5px solid #e44520;
+}
+ul li:nth-child(3):hover{
+    border-bottom: 5px solid #80cea1;
+}
+
+
+/* ............................ABOUT ME SECTION............................................**/
+
+#About_Me{
+    background: #eee;
+    position: relative;
+    height: 400px;
+    color: #393333;
+}
+.Mainwrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.ElementWrapper{
+    position: relative;
+    margin-top: 70px;
+    text-align: center;
+}
+#about_head{
+    margin-bottom: 30px;
+}
+#about_text{
+    text-align: center;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+/* ............................TEAM WORK SECTION............................................**/
+
+
+#GridWrapper{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 3px;
+    color: #393333;
+}
+#team_image{
+    width: 600px;
+    grid-column: 1/6;
+}
+
+#comm_area{
+    grid-column: 7/13;
+    margin-top: 15px;
+}
+
+#comm_text{
+    margin-top: 20px;
+    line-height: 22px;
+    padding-right: 20px;
+}
+#btn_download{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+    background: #353d4d;
+    color: #fff;
+    margin-right: 7px;
+}
+#Hubbies{
+    text-align: center;
+}
+#hub_image{
+    margin-top: 10px;
+    width: 900px;
+}
+
+/* ............................FOOTER SECTION............................................**/
+
+footer{
+    margin-top: 60px;
+    background-image: url(../img/earth.png);
+    width: 100%;
+    height: 500px;
+    position: relative;
+    color: #fff;
+    background-size: cover;
+}
+
+#input_message{
+    width: 30%;
+    height: 200px;
+    margin-top: 30px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 20px;
+}
+
+#send_message{
+    display: block;
+    margin-left: 41%;
+    width: 20%;
+    height: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: #fff;
+    background: #773f0b;
+    border: 0px;
+}
+
+/* SMALL DEVICE **/
+@media screen and (max-width: 760px){
+ /* ............................HEADER DESIGN SMALL DEVICE............................................**/
+    header{
+        height: 590px;
+    }
+    #my_name{
+        font-size: small;
+        margin-left: 15%;
+        margin-top: 40px;
+    }
+    #dot_image{
+        width: 60px;
+        margin-right: 10px;
+        margin-top: -50px;
+
+    }
+    #full_stack{
+        margin-left: 15%;
+        width: fit-content;
+        margin-top: 10px;
+    }
+    #full_id{
+        font-size: 10px
+    }
+    #cor_img{
+        width: 20px;
+    }
+    #description{
+        margin-top: 40px;
+        margin-left: 5px;
+    }
+    #head_des{
+        grid-column: 1/13;
+        grid-row: 4/9;
+        margin-left: 3px;
+        margin-top: 1px;
+        padding: 2px;
+    }
+    #head_img{
+        grid-column: 3/13;
+        margin-top: -10px;
+        width: 200px;
+    }
+    nav{
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    ul{
+        justify-content: space-evenly;
+    }
+    ul li{
+        margin-left: 0;
+    }
+
+
+/* ............................ABOUT ME SECTION............................................**/
+
+#about_text{
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+/* ............................TEAM WORK SECTION............................................**/
+#team_image{
+    width: 100%;
+    grid-column: 1/13;
+}
+
+#comm_area{
+    margin-top: 15px;
+    grid-row: 2/5;
+    grid-column: 1/13;
+    font-size: medium;
+}
+#comm_text{
+    padding-left: 4px;
+    padding-right: 4px;
+}
+#btn_download{
+    width: 50%;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+/* ............................HUBBIES SECTION............................................**/
+#hub_image{
+    margin-top: 30px;
+    width: 100%;
+}
+
+/* ............................FOOTER SECTION............................................**/
+#input_message{
+    width: 90%;
+}
+
+#send_message{
+    margin-left: 6vw;
+    width: 90%;
+    height: 40px;
+    margin-top: 20px;
+    
+}
+
+}
+
+
+
+@media only screen and (device-width:768px){
+/* ............................HEADER DESIGN IPAD............................................**/
+    header{
+        height: 350px;
+    }
+    nav{
+        margin-left: 0;
+        margin-left: 20px;
+    }
+/* ............................ABOUT ME SECTION IPAD............................................**/
+
+#about_text{
+    padding-left: 2px;
+    padding-right: 2px;
+    line-height: 22px;
+}
+
+
+/* ............................TEAM WORK SECTION............................................**/
+#team_image{
+    width: 100%;
+    grid-column: 1/13;
+}
+
+#comm_area{
+    margin-top: 15px;
+    grid-row: 2/5;
+    grid-column: 1/13;
+    font-size: medium;
+}
+#comm_head{
+    text-align: center;
+}
+#comm_text{
+    padding-left: 4px;
+    padding-right: 4px;
+}
+#btn_download{
+    width: 50%;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#hub_image{
+    margin-top: 30px;
+    width: 100%;
+}
+
+/* ............................FOOTER SECTION............................................**/
+#input_message{
+    width: 90%;
+}
+
+#send_message{
+    margin-left: 20vw;
+    width: 60%;
+    height: 40px;
+    margin-top: 20px;
+    
+}
+
+}
+
+@media only screen and (device-width:1024px){
+/* ............................HEADER DESIGN IPAD PRO............................................**/
+    header{
+        height: 350px;
+    }
+    nav{
+        margin-left: 0;
+        margin-left: 200px;
+    }
+
+/* ............................ABOUT ME SECTION IPAD............................................**/
+#about_text{
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    line-height: 22px;
+    line-break: strict;
+}
+
+/* ............................TEAM WORK SECTION............................................**/
+#team_image{
+    width: 100%;
+    grid-column: 1/13;
+}
+
+#comm_area{
+    margin-top: 15px;
+    grid-row: 2/5;
+    grid-column: 1/13;
+    font-size: medium;
+}
+#comm_head{
+    text-align: center;
+}
+#comm_text{
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: x-large;
+    line-height: 30px;
+}
+
+#btn_download{
+    width: 50%;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#hub_image{
+    margin-top: 30px;
+    width: 100%;
+}
+
+/* ............................FOOTER SECTION............................................**/
+#input_message{
+    width: 90%;
+}
+
+#send_message{
+    margin-left: 20vw;
+    width: 60%;
+    height: 44px;
+    margin-top: 20px;
+    
+}
+
+}
+
+#aboutImage{
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+@keyframes image_blink{
+    0%{
+       border: 20px solid #20cbe4;
+}
+50%{
+   border: 20px solid #e44520;
+}
+100%{
+    border: 20px solid #ebdd18;;
+}
+}
